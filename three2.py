@@ -2,7 +2,7 @@ def f(n):
     inner = [1, 2, 4, 5, 10, 11, 23, 25]
     outer = []
     
-    for i in range(n):
+    while True:
         innerSide = len(inner) // 4 + 1
         currentOuter = len(outer)
         # first
@@ -36,9 +36,8 @@ def f(n):
         if len(outer) == innerSide * 4 + 4:
             inner = outer
             outer = []
-    return inner
+        x = list(filter(lambda x: x >= 312051, inner))
+        if len(x) > 0 and x[0] >= n: return x[0]
 
-
-# one of the elements in the list is > 312051
-print(f(100))
+print(f(312051))
 
