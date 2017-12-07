@@ -1,6 +1,5 @@
 def f(l):
     l = list(map(int, l.split("\n")))
-    print(l)
     jump = 0
     count = -1
     while True:
@@ -22,4 +21,5 @@ test = """0
 0
 1
 -3"""
+print(f(test))
 print(f(text))
