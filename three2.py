@@ -39,7 +39,7 @@ def f(n):
     return inner
 
 
-print(f(100))
+print(f(1000000))
 
 #print(f(312051))
 
