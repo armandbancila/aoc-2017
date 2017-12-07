@@ -36,7 +36,7 @@ def f(n):
         if len(outer) == innerSide * 4 + 4:
             inner = outer
             outer = []
-        x = list(filter(lambda x: x >= 312051, inner))
+        x = list(filter(lambda x: x >= n, inner))
         if len(x) > 0 and x[0] >= n: return x[0]
 
 print(f(312051))
