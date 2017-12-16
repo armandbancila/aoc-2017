@@ -10,7 +10,7 @@ def f(l):
             l[jump] -= 1
         else:
             l[jump] += 1
-        
+
         jump = temp + pos
         if jump >= len(l):
             count += 1

@@ -1,7 +1,6 @@
 def f(x):
     y = 1
     s = 1
-    # loop can probably be replaced by division
     while True:
         if s >= x: break
         y += 2
